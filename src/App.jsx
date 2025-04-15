@@ -94,8 +94,8 @@ export default function App() {
       if (kun == "Enter") {
           setDisplay((prev) => {
             try{
-              let total= evaluate(prev);
-              setDisplay(total);
+              let total=evaluate(prev);
+              setDisplay(String (total));
             }catch(e){
               console.log(e.message);
               setDisplay("error")
